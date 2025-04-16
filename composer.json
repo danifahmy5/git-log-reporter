@@ -1,0 +1,35 @@
+{
+    "version": "1.0.9",
+    "name": "danifahmy5/git-log-reporter",
+    "description": "Library untuk membaca log Git dan generate laporan",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Danifahmy5\\GitLogReporter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dani fahmy",
+            "email": "danifahmy5@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.29"
+    },
+    "repositories": {
+        "local": {
+            "type": "path",
+            "url": "../git-log-reporter"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Danifahmy5\\GitLogReporter\\GitLogReporterServiceProvider"
+            ]
+        }
+    }
+}
